@@ -1,10 +1,8 @@
 import os
-os.environ["KERAS_BACKEND"] = "plaidml.keras.backend"
-
 from keras.preprocessing.image import ImageDataGenerator, array_to_img, img_to_array, load_img
 from PIL import Image
 
-project_directory = r'/Users/duanebester/Projects/DeepLearning/image-fixer/'
+project_directory = r'/Users/duanebester/code/DeepLearning/image-fixer/'
 datagen = ImageDataGenerator(rotation_range=15,
                              width_shift_range=0.01,
                              height_shift_range=0.1,

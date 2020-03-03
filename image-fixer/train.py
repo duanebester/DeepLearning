@@ -1,6 +1,3 @@
-import os
-os.environ["KERAS_BACKEND"] = "plaidml.keras.backend"
-
 from random import random
 from numpy import load
 from numpy import zeros

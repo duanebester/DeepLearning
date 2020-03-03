@@ -1,6 +1,3 @@
-import os
-os.environ["KERAS_BACKEND"] = "plaidml.keras.backend"
-
 from os import listdir
 from numpy import asarray
 from numpy import vstack
