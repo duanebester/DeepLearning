@@ -1,0 +1,7 @@
+*.npz
+*.png
+*.jpg
+.DS_Store
+
+
+.vscode/
