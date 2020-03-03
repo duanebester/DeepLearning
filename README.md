@@ -4,6 +4,10 @@ Deep Learning Experiments
 
 ### Image Fixer
 
+Uses Keras + Tensorflow backend. The goal is to try leverage a CycleGAN to remove moiré from images.
+
+The images in the raw folder are 512 x 512, but the data_generation script converts them to 256 x 256.
+
 #### Setup
 
 ```
@@ -29,9 +33,15 @@ Python deps
 pip install -r requirements.txt
 ```
 
+We also need Keras Contrib
+
+```
+sudo pip install git+https://www.github.com/keras-team/keras-contrib.git
+```
+
 ##### Data Generation
 
-Update project directory in `data_generation.py`:
+Update `project_directory` in `data_generation.py`:
 
 ```
 project_directory = r'/Users/duanebester/code/DeepLearning/image-fixer/'
